@@ -1,2 +1,2 @@
 #!/bin/bash
-betty "$CFILE.c">"$CFILE.o"
+gcc -c -save-temps $CFILE
