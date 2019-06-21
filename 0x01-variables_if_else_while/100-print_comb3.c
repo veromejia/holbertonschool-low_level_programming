@@ -6,10 +6,13 @@
  */
 int main(void)
 {
-int cont = 1;
-for (int i = 48; i < 58; i++)
+int cont;
+int i;
+int j;
+cont = 1;
+for (i = 48; i < 58; i++)
 {
-for (int j = 48 + cont; j < 58; j++)
+for (j = 48 + cont; j < 58; j++)
 {
 if (i != j)
 {
