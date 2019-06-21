@@ -7,21 +7,15 @@
 int main(void)
 {
 int i;
-i = 0;
-while (i <= 9)
-{
-if (i == 9)
+for (i = 0; i <= 9; i++)
 {
 putchar(i % 10 + '0');
-i++;
-}
-else
+if (i < 9)
 {
-putchar(i % 10 + '0');
 putchar(',');
 putchar(' ');
-i++;
 }
-}
+} 
+putchar('\n');
 return (0);
 }
