@@ -19,7 +19,7 @@ i++;
 else
 {
 putchar(i % 10 + '0');
-putchar(',');
+putchar(', ');
 i++;
 }
 }
