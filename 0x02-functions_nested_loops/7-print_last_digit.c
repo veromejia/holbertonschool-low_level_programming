@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * print_sign - function that checks for lowercase character.
+ * print_last_digit - function that checks for lowercase character.
  * @d: First operand
  * Description: verify is lowercase or no
  * Return: the value 1 if lowercase or 0 otherwise
