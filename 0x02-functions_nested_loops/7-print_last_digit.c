@@ -13,7 +13,7 @@ int result;
 int j;
 if (d < 0)
 {
-j = d * -1;
+j = d * (-1);
 result = j % 10;
 _putchar ('0' + result);
 }
