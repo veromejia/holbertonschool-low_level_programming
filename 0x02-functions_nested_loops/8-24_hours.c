@@ -1,38 +1,24 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * print_alphabet - print a-z
+ * jack_bauer - print hour and minutes
+ * Description: print hours in munutes with 24hr format
  */
 
 void jack_bauer(void)
 {
-  char m;
-  char m1;
-  char s;
-  char s1;
-  for (m = 0; m < 3; m++)
-    {
-      for (m1 = 0; m1 < 10; m1++)
-	{
-	  if (m < 2)
-	    {
-	  for (s = 0; s < 6; s++)
-	    {
-	      for (s1 = 0; s1 < 10; s1++)
-		{
-		  _putchar('0' + m);
-		  _putchar('0' + m1);
-		  _putchar(':');
-		  _putchar('0' + s);
-		  _putchar('0' + s1);
-		  _putchar('\n');
-		}
-	    }
-	    }
-	  
-	  	 
-	  
- 
-	}
-    }
+int m;
+int s;
+for (m = 00; m < 24 ; m++)
+{
+for (s = 00; s < 60; s++)
+{
+_putchar(m / 10 + '0');
+_putchar(m % 10 + '0');
+_putchar(':');
+_putchar(s / 10 + '0');
+_putchar(s % 10 + '0');
+_putchar('\n');
+}
+}
 }

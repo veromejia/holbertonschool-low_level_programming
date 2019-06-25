@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ * times_table - print the nine times tables
+ */
+
+void times_table(void)
+{
+  int i;
+  int j;
+  int result;
+  for (i = 48; i < 58; i++)
+    {
+      for (j = 48; j < 58; j++)
+	{
+	  result = i * j;
+	  _putchar( result);
+	  _putchar (',');
+	  _putchar (' ');
+	    }
+      _putchar('\n');
+    }
+}
+      
