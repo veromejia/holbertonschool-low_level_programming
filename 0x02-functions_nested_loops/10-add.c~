@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ * _abs - function that checks for lowercase character.
+ * @a: First operand
+ * @b: Second operand
+ * Description:add the addition of two numbers
+ * Return: the value addition 
+ *
+ */
+int add(int a, int b);
+{
+int result;
+result = (a + b);
+return (result);
+}
