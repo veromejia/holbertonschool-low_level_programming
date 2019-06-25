@@ -13,6 +13,6 @@ if (d < 0)
 d  = d * -1;
 int result;
 result = d % 10;
-putchar ('0' + result);
+_putchar ('0' + result);
 return (result);
 }
