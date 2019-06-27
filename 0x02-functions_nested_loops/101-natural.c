@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * print_natural - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+
+void print_natural(void)
 {
 int n;
 int n3;
