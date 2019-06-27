@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 /**
  * main - Entry point
  *
@@ -17,12 +16,12 @@ for (n = 0; n < 1024; n++)
 {
 if ((n % 3) == 0)
 {
-n3 =n3 + ( n / 3);
+n3 = n3 + (n / 3);
 }
 if ((n % 5) == 0)
 {
-n5 =n5 + ( n / 5);
+n5 = n5 + (n / 5);
 }
-} 
-printf("%d\n",(n3 + n5));
+}
+printf("%d\n", (n3 + n5));
 }
