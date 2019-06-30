@@ -20,7 +20,7 @@ for (j = 0; j < 96; j++)
 c = a + b;
 a = b;
 b = c;
-if (j != 47)
+if (j != 95)
 printf("%.0f, ", c);
 }
 printf("%.0f\n", c);
