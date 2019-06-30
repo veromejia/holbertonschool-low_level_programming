@@ -11,11 +11,11 @@ int j;
 double a;
 double b;
 double c;
-a= 1;
+a = 1;
 b = 2;
 printf("%0.f, ", a);
 printf("%0.f, ", b);
-for (j = 0; j<48; j++)
+for (j = 0; j < 48; j++)
 {
 c = a + b;
 a = b;
