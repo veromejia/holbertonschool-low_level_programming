@@ -13,16 +13,17 @@ double b;
 double c;
 a = 1;
 b = 2;
-printf("%0.f, ", a);
-printf("%0.f, ", b);
+printf("%.0f, ", a);
+printf("%.0f, ", b);
 for (j = 0; j < 96; j++)
 {
 c = a + b;
 a = b;
 b = c;
+printf("%.0f", c);
 if (j != 95)
-printf("%.0f, ", c);
+printf(", ");
 }
-printf("%.0f\n", c);
+printf("\n");
 return (0);
 }
