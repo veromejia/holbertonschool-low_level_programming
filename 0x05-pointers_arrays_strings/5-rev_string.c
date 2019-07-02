@@ -7,13 +7,24 @@
  */
 void rev_string(char *s)
 {
-int j;
-char rev[10];
-
-for (j = 9; j >= 0; j--)
-{
-  rev[9-j]=s[j];
-  putchar(s[j]);
-}
+  int lenght, c;
+ char *begin, *end, temp;
+ 
+   lengthl = 10;
+   begin  = s;
+   end    = s;
+ 
+   for (c = 0; c < length - 1; c++)
+      end++;
+ 
+   for (c = 0; c < length/2; c++)
+   {        
+      temp   = *end;
+      *end   = *begin;
+      *begin = temp;
+ 
+      begin++;
+      end--;
+   }
  
 }
