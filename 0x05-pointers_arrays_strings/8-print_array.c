@@ -13,11 +13,10 @@ int i;
 /* *a = array[] */
 for (i = 0; i <= n - 1; i++)
 {
-if (i != n - 1)
-{
-printf("%d, ", a[i]);
+printf("%d", a[i]);
+if (i < n - 1)
+printf(", ");
 }
-else
-printf("%d\n", a[i]);
-}
+printf("\n");
+
 }
