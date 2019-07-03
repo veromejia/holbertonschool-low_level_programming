@@ -4,23 +4,19 @@
  * @s: string
  * Return: Always 0.
  */
-
 void rev_string(char *s)
 {
-	int temp, i, end, count;
-	count = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		count++;
-	}
-	
-	end = count - 1;
-
-	for (i = 0; i < end; i++, end--)
-	{
-	temp = s[i];
-	s[i] = s[end];
-	s[end] = temp;
-	}
+int temp, i, end, count;
+count = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+count++;
+}
+end = count - 1;
+for (i = 0; i < end; i++, end--)
+{
+temp = s[i];
+s[i] = s[end];
+s[end] = temp;
+}
 }
