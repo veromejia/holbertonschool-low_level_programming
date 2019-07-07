@@ -1,0 +1,1 @@
+Learning more string and arrays

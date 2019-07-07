@@ -1,0 +1,27 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ * _islower - verify is the string is lower or not
+ * string_toupper - change all lowercase letters of a string to uppercase
+ * @a: string
+ * @c: is an integer
+ * Return: an upper string
+ */
+
+int _islower(int c)
+{
+if (c >= 'a' && c <= 'z')
+return (1);
+else
+return (0);
+}
+char *string_toupper(char *a)
+{
+int j = 0;
+for (j = 0; a[j] != '\0'; j++)
+{
+if (_islower(a[j]))
+a[j] = a[j] - 32;
+}
+return (a);
+}
