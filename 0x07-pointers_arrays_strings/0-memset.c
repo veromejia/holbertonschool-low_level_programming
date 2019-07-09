@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
  *  _memset - fills the first n bytes of memory pointed to by s
  * @s:pointer to a character
@@ -11,10 +11,8 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-char *p;
-p = s;
 unsigned int i;
-for (i = 0; i < n; i++, s++)
-*s = b;
-return (p);
+for (i = 0; i < n; i++,s++)
+*s=b;
+return (s);
 }
