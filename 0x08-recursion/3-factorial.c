@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * factorial - print the factorial of n number
@@ -12,6 +11,8 @@ if (n < 0)
 return (-1);
 else if (n == 0)
 return (1);
+ else if (n > 0)
+return (n * factorial(n-1));
 else
-return(n * factorial(n-1));
+return (0);
 }
