@@ -1,0 +1,36 @@
+#include "holberton.h"
+/**
+ * root13 - reverse_array -reverses the content of an array of integers.
+ * @a: array of integers
+ * Return: encode string.
+ */
+char *rot13(char *a)
+{
+
+  for(; *a != '\0'; *a++){
+if ((*a >= 'a' && *a <= 'm') || (*a >= 'A' && *a <= 'M'))
+{
+*a = *a + 13;
+}
+else
+{
+while ((*a >= 'n' && *a <= 'z') || (*a >= 'N' && *a <= 'Z'))
+{
+*a = *a - 13;
+}
+} 
+}
+
+ 
+//for (i = 0; a[i] != '\0'; i++)
+//{
+//for (j = 0; j < 64; j = j + 2)
+//{
+//if (a[i] == aux[j])
+//{
+//a[i] = aux[j + 1];
+//}
+//}
+//}
+return (a);
+}
