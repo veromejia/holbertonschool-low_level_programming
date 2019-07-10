@@ -11,7 +11,7 @@ int i = 0;
 if (s[i] != '\0')
 {
 _print_rev_recursion(s + 1);
-putchar(s[i]);
+_putchar(s[i]);
 i++;
 }
 }
