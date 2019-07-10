@@ -3,7 +3,7 @@
 /**
  * print_diagsums - check the code for Holberton School students.
  * @a: array
- * @size; size of the array
+ * @size: size of the array
  * Return: Always 0.
  */
 void print_diagsums(int *a, int size)
