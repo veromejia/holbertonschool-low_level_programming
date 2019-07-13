@@ -1,0 +1,14 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+* _atoi - function atoi
+* @s: string
+* Return: an integer
+*/
+
+int _atoi(char *s)
+{
+char *a = s
+printf("%s",a);
+  return(0);
+}
