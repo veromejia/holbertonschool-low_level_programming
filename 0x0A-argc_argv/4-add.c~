@@ -1,11 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * validate - verify if string is number
- * @p: pointer a char
- * Return: integer 1 if number 0 if diferrent
- */
+#include <ctype.h>
+
 int validate(char *p)
 {
 int i;
@@ -23,15 +20,9 @@ return (0);
 }
 return (result);
 }
-/**
- * main - function main
- * @argc: counter of arguments
- * @argv: string argument vector
- * Return: return always 0
- */
 int main(int argc, char *argv[])
 {
-unsigned int result = 0;
+int result = 0;
 int i;
 for (i = 1; i < argc; i++)
 {
