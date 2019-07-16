@@ -15,7 +15,7 @@ if (size > 0)
 {
 ptr = malloc(size * sizeof(char));
 if (ptr == NULL)
-return(NULL);
+return (NULL);
 }
 else
 return (NULL);
