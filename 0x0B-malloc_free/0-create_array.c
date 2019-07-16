@@ -14,6 +14,8 @@ unsigned int i;
 if (size > 0)
 {
 ptr = malloc(size * sizeof(char));
+if (ptr == NULL)
+return(NULL);
 }
 else
 return (NULL);
