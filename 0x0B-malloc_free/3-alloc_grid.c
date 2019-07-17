@@ -14,7 +14,7 @@ int h;
 int **ptr;
 if (width < 1 || height < 1)
 return (NULL);
-ptr = malloc(sizeof(int *) * (height) * (width));
+ptr = malloc(sizeof(int *) * (height));
 if (ptr == NULL)
 return (NULL);
 for (h = 0; h < height; h++)
