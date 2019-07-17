@@ -3,7 +3,7 @@
 
 /**
  *free_grid - frees memory from grid
- *@grid: grid 
+ *@grid: grid
  *@height: height of the grid;
  *Return: always 0
  */
