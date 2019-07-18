@@ -27,7 +27,7 @@ if (n >= j)
 k = j;
 else
 k = n;
-ptr = malloc(i + (n * sizeof(*s2) + 1) *  sizeof(*ptr));
+ptr = malloc(i + (n + 1) *  sizeof(*ptr));
 if (ptr == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
