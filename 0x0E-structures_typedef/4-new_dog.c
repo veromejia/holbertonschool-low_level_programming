@@ -25,13 +25,13 @@ while (owner[size_owner++])
 ptr_dog = malloc(sizeof(dog_t));
 if (ptr_dog == NULL)
 return (NULL);
-ptr_dog->name = malloc(size_name * sizeof(ptr_dog->name));
+ptr_dog->name = malloc((size_name + 1) * sizeof(ptr_dog->name));
 if (ptr_dog == NULL)
 return (NULL);
 for (i = 0; i < size_name; i++)
 ptr_dog->name[i] = name[i];
 ptr_dog->age = age;
-ptr_dog->owner = malloc(size_owner * sizeof(ptr_dog->owner));
+ptr_dog->owner = malloc((size_owner + 1) * sizeof(ptr_dog->owner));
 if (ptr_dog == NULL)
 for (i = 0; i < size_owner; i++)
 ptr_dog->owner[i] = owner[i];
