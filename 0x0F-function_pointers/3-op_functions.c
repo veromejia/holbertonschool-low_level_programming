@@ -59,7 +59,7 @@ return (a / b);
 */
 int op_mod(int a, int b)
 {
-if (a % b)
+if (b == 0)
 {
 printf("error\n");
 exit(100);
