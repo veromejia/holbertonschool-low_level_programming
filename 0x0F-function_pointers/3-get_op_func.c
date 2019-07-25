@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * get_op_func - option of operation
@@ -20,10 +20,9 @@ op_t ops[] = {
 int i = 0;
 while (i < 5)
 {
-if (ops[i].op[0] == s[0])
+if (ops[i].op[0] == s[0] && strcmp(ops[i].op, s) == 0)
 return (ops[i].f);
 i++;
 }
-printf("Error\n");
-exit(99);
+return (NULL);
 }
