@@ -10,5 +10,5 @@ typedef struct printing
 {
 	char *ptr_format;
 	void (*funct_pointer)();
-}
+}printing;
 #endif /*HOLBERTON_H*/
