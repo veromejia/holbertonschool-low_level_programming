@@ -50,19 +50,16 @@ void print_s(va_list s)
 void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
-	char *aux = "";
+	char *aux;
 	va_list argp;
-
-	i = 0;
-
 	v_types printTypes[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
-		{"s", print_s},
-		{NULL, NULL}
+		{"s", print_s}
 	};
-
+	i = j = 0;
+	aux = "";
 	va_start(argp, format);
 	while (format && format[i])
 	{
@@ -73,7 +70,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", aux);
 				printTypes[j].f(argp);
-				aux = " ,";
+				aux = ", ";
 			}
 			j++;
 		}
