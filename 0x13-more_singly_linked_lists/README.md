@@ -60,7 +60,7 @@ of a listint_t linked list.
 if the list is empty, return 0
 
 
-###9. Insert mandatory
+### 9. Insert mandatory
 Write a function that inserts a new node at a given position.
 
 Prototype:
@@ -72,7 +72,7 @@ if it is not possible to add the new node at index idx,
 do not add the new node and return NULL
 
 
-10. Delete at index mandatory
+### 10. Delete at index mandatory
 Write a function that deletes the node at index index of a listint_t linked list
 
 Prototype:``int delete_nodeint_at_index(listint_t **head, unsigned int index);``
