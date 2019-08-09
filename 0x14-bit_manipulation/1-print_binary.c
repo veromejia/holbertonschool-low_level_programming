@@ -1,12 +1,14 @@
 #include "holberton.h"
 /**
- * print-binary - print a binary number
+ * print_binary - print a binary number
  * @n: number
+ * Description: print binary using bit manipulations
  * Return: the binary representation of the number
  */
 void print_binary(unsigned long int n)
 {
 	int i, flag, number;
+
 	if (n == 0)
 		_putchar('0');
 
