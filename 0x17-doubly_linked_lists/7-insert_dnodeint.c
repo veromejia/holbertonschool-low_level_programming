@@ -1,4 +1,5 @@
 #include "lists.h"
+#include<stdio.h>
 /**
  * insert_dnodeint_at_index - inset a new node at a given position
  * @h: fist node of the list
@@ -21,20 +22,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new->n = n;
 	new->prev = NULL;
 	new->next = NULL;
+
 	if (idx == 0)
-	{
-		if (*h != NULL)
-		{
-			new->next = temp;
-			temp->prev = new;
-			*h = new;
-		}
-		else
-		{
-			*h = new;
-		}
-		return (*h);
-	}
+		return (add_dnodeint(h, n));
+
 	for (i = 0; i < idx - 1; i++)
 	{
 		temp = temp->next;
