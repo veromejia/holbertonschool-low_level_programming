@@ -10,6 +10,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *head = *list;
 	listint_t *tmp = (*list)->next;
+
 	while (tmp != NULL)
 	{
 		while (head != NULL && tmp->n < head->n)
@@ -24,8 +25,12 @@ void insertion_sort_list(listint_t **list)
 		tmp = tmp->next;
 	}
 }
-
-
+/**
+ * swap_nodes - swap to given nodes
+ * @node1: fist node
+ * @node2: second node
+ * Return: the first node
+ */
 
 listint_t *swap_nodes(listint_t *node1, listint_t *node2)
 {
@@ -49,8 +54,8 @@ listint_t *swap_nodes(listint_t *node1, listint_t *node2)
 		node1->prev->next = node1;
 
 	if (node2->prev == NULL)
-		return node2;
+		return (node2);
 
 	node2->prev->next = node2;
-	return node1;
+	return (node1);
 }
