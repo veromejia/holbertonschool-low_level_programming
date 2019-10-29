@@ -27,7 +27,7 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void recursion_sort(int *array, size_t size, int leftIdx, int rightIdx);
 int partition(int *array, size_t size, int leftIdx, int rightIdx);
-listint_t *swap_nodes(listint_t **node1, listint_t **node2);
+listint_t *swap_nodes(listint_t *node1, listint_t *node2);
 
 
 /* prototypes */
