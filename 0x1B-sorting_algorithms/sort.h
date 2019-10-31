@@ -28,6 +28,9 @@ void print_list(const listint_t *list);
 void recursion_sort(int *array, size_t size, int leftIdx, int rightIdx);
 int partition(int *array, size_t size, int leftIdx, int rightIdx);
 listint_t *swap_nodes(listint_t *node1, listint_t *node2);
+void heapify(int *array, int n, int i, size_t size);
+int get_max(int *array, size_t size);
+void countingSort(int *array, int size, int place);
 
 
 /* prototypes */
@@ -39,7 +42,6 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
-int get_max(int *array, size_t size);
-void countingSort(int *array, int size, int place);
 void counting_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 #endif
