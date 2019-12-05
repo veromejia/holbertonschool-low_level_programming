@@ -9,7 +9,7 @@ size_t measure_height(const binary_tree_t *tree)
 {
 	size_t maxl, maxr, max;
 
-	if (tree == null)
+	if (tree == NULL)
 		return (0);
 
 	maxl = measure_height(tree->left);
