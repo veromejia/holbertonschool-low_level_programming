@@ -8,23 +8,24 @@
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t *node = NULL;
+	binary_tree_t *new = NULL;
 
-	node = binary_tree_node(parent, value);
-
-	if (node == NULL || parent == NULL)
+	if (parent == NULL)
 		return (NULL);
+
+	new = binary_tree_node(parent, value);
+	if (new == NULL)
+		return (NULL);
+
+	new->parent = parent;
+	new->n = value;
 
 	if (parent->left != NULL)
 	{
-		binary_tree_t *aux_left = parent->left;
-
-		parent->left = NULL;
-		aux_left->parent = NULL;
-		node->left = aux_left;
-		aux_left->parent = node;
+		new->left = parent->left;
+		new->left->parent = new;
 	}
-	parent->left = node;
 
-	return (node);
+	parent->left = new;
+	return (new);
 }
