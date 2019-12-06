@@ -1,12 +1,13 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
-#define DIFF(a,b) (a - b)
-#define MAX(a,b)  (a < b ? b : a)
+#define DIFF(a, b) (a - b)
+#define MAX(a, b)  (a < b ? b : a)
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <limits.h>
 
 /**
  * struct binary_tree_s - Binary tree node
