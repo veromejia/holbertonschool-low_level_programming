@@ -10,6 +10,8 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
+	if (!array)
+		return (-1);
 	return (recursive_binarySearch(array, 0, (int)size - 1, value));
 }
 
@@ -44,7 +46,7 @@ int recursive_binarySearch(int *arr, int l, int r, int x)
  * @l: left position
  * @r: right position
  */
-void print_sub_array( int l, int r)
+void print_sub_array(int l, int r)
 {
 	int i;
 
