@@ -10,51 +10,29 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	if (!array)
-		return (-1);
-	return (recursive_binarySearch(array, 0, (int)size - 1, value));
-}
+	int l = 0;
+	int r = size - 1;
+	int i, middle;
 
-/**
- * recursive_binarySearch - functiont that search for a value
- * using recursion
- * @arr: pointer to the first element of the array
- * @l: left position
- * @r: right position
- * @x: value to search
- * Return: a integer where value is located
- */
-int recursive_binarySearch(int *arr, int l, int r, int x)
-{
-	if (r >= l)
+	if (array == NULL)
+		return (-1);
+
+	while (l <= r)
 	{
 		printf("Searching in array: ");
-		print_sub_array(l, r);
-		int mid = l + (r - l) / 2;
+		for (i = l; i < r; i++)
+			printf("%i, ", array[i]);
 
-		if (arr[mid] == x)
-			return (mid);
-		if (arr[mid] > x)
-			return (recursive_binarySearch(arr, l, mid - 1, x));
-		return (recursive_binarySearch(arr, mid + 1, r, x));
+		printf("%i\n", array[i]);
+
+		middle = (l + r) / 2;
+
+		if (array[middle] < value)
+			l = middle + 1;
+		else if (array[middle] > value)
+			r = middle - 1;
+		else
+			return (middle);
 	}
 	return (-1);
-}
-
-/**
- * print_sub_array - print the subarray
- * @l: left position
- * @r: right position
- */
-void print_sub_array(int l, int r)
-{
-	int i;
-
-	for (i = l; i <= r; i++)
-	{
-		printf("%i", i);
-		if (i != r)
-			printf(", ");
-	}
-	printf("\n");
 }
